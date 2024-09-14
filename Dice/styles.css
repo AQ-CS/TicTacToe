@@ -1,0 +1,66 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+.players{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+body {
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #ffa02b;
+}
+
+p {
+  font-size: 2rem;
+  color: #000000;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  border-radius: 8%;
+  width: 50%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+.roller{
+  margin-top: 5%;
+  grid-column: 1 / span 3; 
+}
+
+button{
+  background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%);
+  height: 5vh;
+  width: 20vw;
+  border: white 2px solid;
+}
+
+.button2{
+  background: radial-gradient(circle at 10% 20%, rgb(204, 151, 28) 0%, rgb(255, 94, 7) 90%);
+  height: 5vh;
+  width: 20vw;
+  border: white 2px solid;
+}

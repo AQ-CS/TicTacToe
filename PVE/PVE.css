@@ -1,0 +1,100 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
+h1{
+    text-align: center;
+}
+#frame, #frame2{
+    display: flex;
+    justify-content:space-between;
+}
+
+#X, #O, #reset{
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    margin: 10px;
+}
+
+#X{
+    background-color: rgb(127, 221, 255);
+}
+
+#O{
+    background-color: rgb(255, 127, 170);
+}
+#reset{
+    background-color: rgb(105, 45, 225);
+    color: white;
+}
+
+.reset{
+    background-color: rgb(248, 67, 224) !important;
+    color: white !important;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 75vh;
+    height: 75vh;
+    border: 2px solid black;
+}
+
+.borders{
+    background-color: white;
+    border: 2px solid black;
+    position: relative;
+}
+
+.X{
+    font-size: 10vh;
+    background-color: rgb(127, 221, 255);
+    color: azure;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+    
+}
+
+.O {
+    font-size: 10vh; /* Adjust font size to fill 90% of the container */
+    background-color: rgb(255, 127, 170);
+    color: azure;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+.picked1{
+    background-color: rgb(0, 170, 255) !important;
+    color: white !important;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.picked2{
+    background-color: rgb(236, 125, 255) !important;
+    color: white !important;
+    border: 2px solid rgb(255, 255, 255);
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.75; /* Optional: visually indicate that the element is disabled */
+}
